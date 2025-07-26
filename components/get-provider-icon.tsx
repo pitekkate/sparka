@@ -14,6 +14,7 @@ import {
   Vercel,
   Aws,
   Moonshot,
+  OpenRouter
 } from '@lobehub/icons';
 
 export function getProviderIcon(provider: ProviderId, size = 16) {
@@ -49,5 +50,7 @@ export function getProviderIcon(provider: ProviderId, size = 16) {
       return <Moonshot {...iconProps} />;
     case 'morph':
       return <OpenAI {...iconProps} />; // Using OpenAI as fallback
+    case 'openrouter':
+      return <OpenAI {...iconProps} />; 
   }
 }
