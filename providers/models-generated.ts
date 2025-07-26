@@ -17,6 +17,7 @@ export const providers = [
   'perplexity',
   'vercel',
   'xai',
+  'openrouter'
 ] as const;
 
 export type ProviderId = (typeof providers)[number];
@@ -1115,4 +1116,47 @@ export const modelsData: ModelData[] = [
       output: '0.000015',
     },
   },
+  
+    {
+      "id": "qwen/qwen3-coder:free",
+      "object": "model",
+      "created": 1753265857,
+      "owned_by": "openrouter",
+      "name": "Qwen3 Coder (Free)",
+      "description": "Qwen3-Coder is an advanced agentic code model delivering performance comparable to Claude Sonnet across coding tasks, browser automation, and repository-scale understanding. With native 256K token context (extendable to 1M via Yarn) and specialized function calling for platforms like Qwen Code and CLINE, it excels at complex agentic coding workflows. This is the free version via OpenRouter.",
+      "context_window": 262144,
+      "max_tokens": 8192,
+      "pricing": {
+        "input": "0.000000",
+        "output": "0.000000"
+      }
+    },
+    {
+      "id": "deepseek/deepseek-chat-v3-0324:free",
+      "object": "model",
+      "created": 1753265857,
+      "owned_by": "openrouter",
+      "name": "DeepSeek Chat V3 0324 (Free)",
+      "description": "DeepSeek Chat V3 model optimized for conversational interaction. This is the free version via OpenRouter.",
+      "context_window": 128000,
+      "max_tokens": 4096,
+      "pricing": {
+        "input": "0.000000",
+        "output": "0.000000"
+      }
+    },
+    {
+      "id": "google/gemini-2.0-flash-exp:free",
+      "object": "model",
+      "created": 1753265857,
+      "owned_by": "openrouter",
+      "name": "Gemini 2.0 Flash Experimental (Free)",
+      "description": "Experimental version of Gemini 2.0 Flash with next-gen features and improved capabilities, including superior speed, built-in tool use, multimodal generation, and a 1M token context window. This is the free version via OpenRouter.",
+      "context_window": 1048576,
+      "max_tokens": 4096,
+      "pricing": {
+        "input": "0.000000",
+        "output": "0.000000"
+      }
+    }
 ];
